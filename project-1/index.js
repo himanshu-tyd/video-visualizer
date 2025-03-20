@@ -122,7 +122,7 @@ function visualize(audioBuffer, audioCtx) {
         ctx.fillRect(
           (i / barMultiplier) * barWidth,
           canvasEl.height - frequencyData[i],
-          barWidth - 2, // Slightly smaller for gap between bars
+          barWidth - 1, // Slightly smaller for gap between bars
           frequencyData[i]
         );
       }

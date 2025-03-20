@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrollbars */
+  }
+  main {
+    /* position: fixed; */
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+  }
+  canvas {
+    width: 100%;
+    /* background-color: red; */
+    height: 100vh; /* Full viewport height */
+  }
+
+  .canvas-container {
+    width: 100%;
+    height: 95%; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+
+  .controls {
+    /* background-color: rgba(0, 0, 0, 0.7); */
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: #4618ff;
+    margin-top: 20px;
+  }
+
+  .input-wrapper {
+    margin-bottom: 15px;
+  }
+
+  .input-wrapper label {
+    display: inline-block;
+    background-color: #4618ff;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .input-wrapper label:hover {
+    background-color: #3b14d9;
+  }
+
+  input[type="file"] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  button {
+    padding: 8px 20px;
+    background-color: #4618ff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, opacity 0.3s;
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #3b14d9;
+  }
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

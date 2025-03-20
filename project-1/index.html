@@ -1,0 +1,31 @@
+  <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio| Visualizer</title>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="icon.svg" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="canvas-container">
+        <canvas id="canvas"></canvas>
+      </div>
+      
+      <div class="controls" style="position: relative; z-index: 10;">
+        <h1>Audio Visualizer</h1>
+        <div class="input-wrapper">
+          <label for="audio">Select Audio File</label>
+          <input type="file" accept="audio/*" id="audio" aria-label="Select audio file" />
+        </div>
+        <div class="button-group">
+          <button id="stop" disabled>Stop</button>
+          <button id="start" disabled>Start</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
